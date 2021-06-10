@@ -4,7 +4,7 @@ function App() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/users')
+    fetch('https://deployapp-api.herokuapp.com/api/users')
     .then(res => res.json())
     .then(data => setUsers(data));
   }, []);
